@@ -12,10 +12,13 @@
 
 <body>
 <?php require './config/traitement.php' ?>
-    <h1>Bienvenue sur Mychat</h1>
+    <h1>Welcome to Mychat</h1>
     <div id="container">
         <div id="chatbox">
-            <div id="chatdata"></div>
+            <div id="chatdata">
+            <span style="color:green;"><?php echo $allMessage['name']; ?> : </span> 
+            <span style="color:brown;"><?php echo $allMessage['message']; ?></span>
+            </div>
         </div>
     </div>
     <form action="" class="login-form" method="POST">
